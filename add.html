@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body class="body1"> 
+    <form name="myform" class="styl1" method="post">
+      <fieldset class="white">
+      <header align="left" class="body1 header1"><strong>ADD TV SHOW</strong></header>
+       <p class="white"><strong>
+        Name</strong><br><input type="text" placeholder="Enter TV show name" name="tvshow" size="130" align="left"><br><br>
+        <input type="submit" onclick="myfunction()" class="addcolor boxsty" value="ADD">
+        <script>
+        function myfunction(){
+          let x= document.forms["myform"]["tvshow"].value;
+          let text;
+          if( x < 1 || x > 10){
+            text="Invalid TV Show name";
+          }else{
+            text= document.forms["myform"]["tvshow"].value +" has been added";
+          }
+        document.getElementById("output").innerHTML=text;
+        }
+        </script>
+        <p id="output"></p>
+        </p>
+        </fieldset>
+      </form>
+      <script type="text/javascript">
+      const script
+      </script>
+
+  </body>
+</html>
